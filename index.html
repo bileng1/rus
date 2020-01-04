@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/icon.css" />
+    <style>
+        #main .icon.major>img {
+            width: 12em;
+            height: 12em;
+            border-radius: 6em;
+            display: block;
+            transition: all .4s;
+        }
+
+        #main .icon.major>img:hover {
+            transform: scale(1.05);
+        }
+
+        section p,
+        #cta ol,
+        #cta ul {
+            text-align: left;
+        }
+
+        #cta p.hd {
+            font-weight: 700;
+        }
+
+        #cta p span {
+            margin-right: 1em;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body class="is-preload">
+    <div>
+        <!-- Header -->
+        <header id="header" class="alt">
+            <span class="logo"><img src="images/logo.svg" alt="" /></span>
+            <h1>Terry’s 个人简历</h1>
+            <h2>web前端工程师</h2>
+            <p>
+                <span>E-mail</span>
+                <a :href="common.email">depn888@gmail.com</a>
+                <span>电话</span>
+                <a href="/">(0063)9669346104</a>
+            </p>
+        </header>
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="#intro" class="active">个人简介</a></li>
+                <li><a href="#first">掌握技能</a></li>
+                <li><a href="#second">部分案例</a></li>
+                <li><a href="#cta">工作履历</a></li>
+            </ul>
+        </nav>
+        <!-- Main -->
+        <div id="main">
+            <!-- Introduction -->
+            <section id="intro" class="main">
+                <div class="spotlight">
+                    <div class="content">
+                        <header class="major">
+                            <h2>我的简历</h2>
+                        </header>
+                        <p>* 计算机及其应用 专科（自考） 就读于山东大学；</p>
+                        <p>* 2012年至今一直从事互联网项目开发，国内从事过政府类信息网站项目，金融类网站项目，OA系统，BPM二次开发等；</p>
+                        <p>* 2019年1月初接触博彩游戏类、球盘投注类网站至今；</p>
+                        <!-- <ul class="actions">
+                    <li><a href="generic.html" class="button">更多</a></li>
+                  </ul> -->
+                    </div>
+                    <span class="image"><img src="images/pic01.jpg" alt="" /></span>
+                </div>
+            </section>
+            <!-- First Section -->
+            <section id="first" class="main special">
+                <header class="major">
+                    <h2>技能掌握</h2>
+                </header>
+                <ul class="statistics">
+                    <li class="style1">
+                        <span class="iconfont js"></span>
+                        <strong>javascript</strong> ECMA2015/ES6
+                    </li>
+                    <li class="style2">
+                        <span class="iconfont h5"></span>
+                        <strong>HTML</strong> html5
+                    </li>
+                    <li class="style3">
+                        <span class="iconfont css3"></span>
+                        <strong>CSS</strong> css3.0
+                    </li>
+                    <li class="style4">
+                        <span class="iconfont iconVue"></span>
+                        <strong>Vue</strong> Vue$vue-router$Vuex
+                    </li>
+                </ul>
+                <p>1.熟悉Vue,熟练vue/vue-router/vuex,熟练第三方ui库elementui/layui/vant等</p>
+                <p>2.精通HTML/CSS,跨浏览器页面开发经验丰富,页面重构经验丰富；熟练sass、css3、响应式布局方案</p>
+                <p>3.熟练Jquery，Zepto，Backbone，Bootstrap等框架, 熟练javascript,熟练ES6语法(常用 let、const、Promise、箭头函数、解构赋值等)</p>
+                <p>4.了解Nodejs,可用Express+Mongoose实现项目</p>
+                <!-- <footer class="major">
+                <ul class="actions special">
+                  <li><a href="generic.html" class="button">Learn More</a></li>
+                </ul>
+              </footer> -->
+            </section>
+            <!-- Second Section -->
+            <section id="second" class="main special">
+                <header class="major">
+                    <h2>部分案例</h2>
+                </header>
+                <ul class="features">
+                    <li>
+                        <a href="http://www.sheng.bet/" class="icon major style1 fa-code" title="球盘PC端项目"
+                            target="_blank">
+                            <img src="images/proj01.png">
+                        </a>
+                        <h3>球盘PC端项目</h3>
+                        <!-- <p>项目介绍：球盘投注为主的综合性游戏平台</p> -->
+                    </li>
+                    <li>
+                        <a href="https://bileng1.github.io/vue_project01/" class="icon major style3 fa-copy"
+                            title="耀城国际前端项目" target="_blank">
+                            <img src="images/proj02.png">
+                        </a>
+                        <h3>耀城国际前端项目</h3>
+                    </li>
+                    <li>
+                        <a href="https://bileng1.github.io/vue_project02/" class="icon major style5 fa-diamond"
+                            target="_blank" title="华山论剑前端项目">
+                            <img src="images/proj03.png">
+                        </a>
+                        <h3>华山论剑前端项目</h3>
+                    </li>
+                    <li>
+                        <a href="https://bileng1.github.io/vue_project03/" class="icon major style1 fa-code"
+                            title="唐游娱乐前端项目" target="_blank">
+                            <img src="images/proj04.png">
+                        </a>
+                        <h3>唐游娱乐前端项目</h3>
+                    </li>
+                    <li>
+                        <a href="https://bileng1.github.io/vue_project04/" class="icon major style3 fa-copy"
+                            title="兆博娱乐前端项目" target="_blank">
+                            <img src="images/proj05.png">
+                        </a>
+                        <h3>兆博娱乐前端项目</h3>
+                    </li>
+                    <li>
+                        <a href="https://bileng1.github.io/vue_project05/" class="icon major style5 fa-diamond"
+                            target="_blank" title="TC-gameing">
+                            <img src="images/proj06.png">
+                        </a>
+                        <h3>TC-gameing</h3>
+                    </li>
+                </ul>
+                <!-- <p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p> -->
+            </section>
+            <!-- Get Started -->
+            <section id="cta" class="main special">
+                <header class="major">
+                    <h2>工作履历</h2>
+                </header>
+                <p class="hd"><span>2012.06 - 2015.06</span><span>山东世纪开元电子商务集团有限公司</span><span>职位：模版制作师</span></p>
+                <p> 工作内容：1.负责公司 设计师管理中心板块 前端页面实施；</p>
+                <p> 2.负责公司外包项目--山东滨州 / 安徽铜陵 信息公开一体机windows嵌入式页面模板以及数据绑定；</p>
+                <p> 3.负责公司外包项目--山东滨州 ( http://www.binzhou.gov.cn ) / 安徽铜陵 政府官网及主控网站下其他行政单位子网站前端模板加后台功能实施；</p>
+                <p class="hd"><span>2015.06 - 2016.06</span><span>知豆电动汽车有限公司</span><span>职位：项目经理</span></p>
+                <p>工作内容：1. 负责公司 流程管理 前端页面二次开发；</p>
+                <p>2. 负责公司 OA系统 页面模板重构；</p>
+                <p class="hd"><span>2016.06 - 2018.11</span><span>山东国晟中融宝信息技术有限公司</span><span>职位：前端工程师</span></p>
+                <p>工作内容：1. 负责公司投资平台 - 中融宝 前台页面，后台页面代码+逻辑实施；</p>
+                <p>2. 负责公司皮草拍卖平台 - 革优商城 (已下架) 前端项目实施；</p>
+                <p class="hd"><span>2019.01 - 至今</span><span>菲律宾某网络科技公司</span><span>职位：前端工程师</span></p>
+                <p>工作内容：1. 负责项目中通用组件编写；</p>
+                <p>2. 负责支付模块前端功能，三方交互模块前端功能，会员中心前端功能；聊天室前端交互功能</p>
+                <header class="major">
+                    <h2>项目经验</h2>
+                </header>
+                <p class="hd">( <a href="https://www.36588.com.cn" target="_blank">https://www.36588.com.cn</a> ) 印刷冲印官网
+                </p>
+                <p>主要负责“创意设计师的在线编辑功能”因为是CSS+JQuery手写项目。当时项目中遇到的各种困难不尽其数。各种dom操作，鼠标拖拽及滑动选取，图层模板编辑，合成图片预览，设计效果RGB与CMYK对比，整个照片编辑功能需要做到完美整合！细节精确到像素。
+                </p>
+                <p class="hd">革优产业链供需平台及优微淘后台管理系统</p>
+                <p>应用技术栈：Nuxt(基于Vue服务器端渲染框架) +Vue + axios + ES6 + Iconfont + ElementUI</p>
+                <p>平台前台方面，主要负责：前端功能实现及接口对接：(总接口数：167)</p>
+                <ol>
+                    <li>产品模块（产品求购，产品现货，种类，详情，发布商品，我的产品，现货成交记录）</li>
+                    <li>仓储模块（仓储服务-列表-详情-会员中心，仓储用户-店铺上传图片-仓储登录-仓储认证，仓储订单，需求-发布，下架，删除，添加，编辑，需求列表）</li>
+                    <li>用户(用户信息修改，密码修改，店铺信息修改，认证，店铺基本信息)</li>
+                    <li>购物车(添加，加入，购物车信息，购物车订单确认功能)</li>
+                    <li>金融(申请填写，意向确认，我要申请，服务申请列表，判断用户状态)</li>
+                </ol>
+                <p class="hd">彩票综合盘项目及球盘项目</p>
+                <p>彩票盘：</p>
+                <ol>
+                    <li>前端交互：支付功能、聊天室、三方接入，应用原生js+css3编写，PC端通用组件借助三方UI框架LayUI及ElementUI</li>
+                    <li>逻辑实现：项目网站大部分应用Vue实例封装的方法封装及通用数据</li>
+                    <li>移动端UI实现使用三方UI框架 Vant，js插件应用 swiper</li>
+                </ol>
+                <p>球盘：</p>
+                <ul>
+                    <li>区别彩票盘的是所有封装的数据以及方法全部应用Vuex</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body class="is-preload">
+<script>
+    window.setTimeout(function () {
+        let body = document.querySelector('body')
+        body.classList.remove("is-preload")
+    }, 100)
+</script>
+
+</html>
